@@ -19,9 +19,9 @@ new Vue(
             picSlider: 0,
         },
         created () {
-            // setInterval(() => {
-            //     this.nextPic();
-            // },1500);
+            setInterval(() => {
+                this.nextPic();
+            },1500);
         },
         methods: {
             nextPic: function () {

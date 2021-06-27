@@ -15,11 +15,11 @@
         <div id="box">
             <div class="player">
                 <div class="row">
-                    <div class="col-2 buttons justify-content-end"><i class=" fas fa-arrow-circle-left fs-2" @click="prevPic"></i></div>
+                    <div class="col-2 buttons justify-content-end"><i class=" fas fa-arrow-circle-left fs-2 pointer" @click="prevPic"></i></div>
                     <div class="img-box col-8">
                         <img :src="pics[picSlider]" alt="">
                     </div>
-                    <div class="col-2 buttons"><i class="fas fa-arrow-circle-right fs-2" @click="nextPic"></i>
+                    <div class="col-2 buttons"><i class="fas fa-arrow-circle-right fs-2 pointer" @click="nextPic"></i>
                     </div>
                 </div>
                 <div class="player-dots d-flex justify-content-around mt-4 py-3">
