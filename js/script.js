@@ -26,30 +26,18 @@ new Vue(
         methods: {
             nextPic: function () {
                 // (this.picSlider = 0) ? (this.picSlider === (this.pics.length - 1)) : this.picSlider++;
-                if (this.picSlider == (this.pics.length - 1)) {
-                    this.picSlider = 0;
-                } else {
-                    this.picSlider ++;
-                }
+                ( this.picSlider == ( this.pics.length - 1 ) ) ? this.picSlider = 0 : this.picSlider++;
             },
             prevPic: function () {
                 // (this.picSlider = this.pics.length - 1) ? this.picSlider === 0 : this.picSlider--;
-                if (this.picSlider === 0) {
-                    this.picSlider = this.pics.length - 1;
-                } else {
-                    this.picSlider--;
-                }
+                ( this.picSlider == 0 ) ? this.picSlider = this.pics.length - 1 : this.picSlider--;
             },
             moveTo: function(i) {
                 this.picSlider = i;
             },
             currentPlayerDot: function (i) {
                 // return 'this' ? (i === this.picSlider) : '';
-                if (i === this.picSlider) {
-                    return 'current';
-                } else {
-                    return '';
-                }
+                return ( i == this.picSlider ) ? 'current' : '';
             }
         }
     }
